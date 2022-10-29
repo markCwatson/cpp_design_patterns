@@ -1,7 +1,7 @@
 CC=g++
 CFLAGS=-I.
-OBJ=main.o
-DEPS=
+OBJ=main.o CodeBuilder/CodeBuilder.o
+DEPS=CodeBuilder/CodeBuilder.hpp
 TARGET=builder
 
 %.o: %.cpp $(DEPS)
