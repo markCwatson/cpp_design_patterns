@@ -1,14 +1,16 @@
-CC=g++
-CFLAGS=-I.
-OBJ=main.o CodeBuilder/CodeBuilder.o
-DEPS=CodeBuilder/CodeBuilder.hpp
+CXX=g++
+EXT=.cpp
+INC_DIR=CodeBuilder
+CXXFLAGS=-I$(INC_DIR)
+OBJ=main.o $(INC_DIR)/CodeBuilder.o
+DEPS=$(INC_DIR)/CodeBuilder.hpp
 TARGET=builder
 
-%.o: %.cpp $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
+%.o: %${EXT} $(DEPS)
+	$(CXX) $(CXXFLAGS) -c $< -o $@ 
 
 all: $(OBJ)
-	$(CC) -g -Wall -o ${TARGET} $(OBJ)
+	$(CXX) -g -Wall -o ${TARGET} $(OBJ)
 
 clean: 
 	rm -f ${TARGET} $(OBJ)

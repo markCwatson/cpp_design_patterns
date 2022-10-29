@@ -1,5 +1,5 @@
 #include <iostream>
-#include <./CodeBuilder/CodeBuilder.hpp>
+#include <CodeBuilder.hpp>
 
 
 int main(int argc, char **argv)

@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <./CodeBuilder/CodeBuilder.hpp>
+#include <CodeBuilder.hpp>
 
 
 CodeBuilder::CodeBuilder(const std::string& class_name)
