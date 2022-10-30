@@ -1,9 +1,9 @@
 CXX=g++
 EXT=.cpp
-INC_DIR=CodeBuilder
+INC_DIR=JsonBuilder
 CXXFLAGS=-I$(INC_DIR)
-OBJ=main.o $(INC_DIR)/CodeBuilder.o
-DEPS=$(INC_DIR)/CodeBuilder.hpp
+OBJ=main.o $(INC_DIR)/JsonBuilder.o
+DEPS=$(INC_DIR)/JsonBuilder.hpp
 TARGET=builder
 
 %.o: %${EXT} $(DEPS)

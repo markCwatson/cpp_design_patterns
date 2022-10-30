@@ -1,9 +1,13 @@
 #include <iostream>
-#include <CodeBuilder.hpp>
+#include <JsonBuilder.hpp>
 
 
 int main(int argc, char **argv)
 {
-    auto cb = CodeBuilder{"Person"}.add_field("name", "string").add_field("age", "int");
+    auto cb = JsonBuilder()
+        .add_field("name", "Billy")
+        .add_field("age", "22")
+        .add_field("email", "billy@email.com");
+    
     std::cout << cb;
 }
