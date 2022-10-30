@@ -1,9 +1,9 @@
 CXX=g++
 EXT=.cpp
-INC_DIR=PeopleFactory
+INC_DIR=PersonFactory
 CXXFLAGS=-I$(INC_DIR)
 OBJ=main.o
-DEPS=$(INC_DIR)/PeopleFactory.hpp
+DEPS=$(INC_DIR)/PersonFactory.hpp
 TARGET=factory
 
 %.o: %${EXT} $(DEPS)

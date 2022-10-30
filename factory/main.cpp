@@ -1,5 +1,5 @@
 #include <iostream>
-#include <PeopleFactory.hpp>
+#include <PersonFactory.hpp>
 
 
 int main(int argc, char **argv)
